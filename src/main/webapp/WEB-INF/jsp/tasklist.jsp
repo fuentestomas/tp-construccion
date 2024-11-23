@@ -3,6 +3,7 @@
 <html>
 <head>
     <title>Lista de Tareas</title>
+    <link href="<c:url value="/resources/static/style.css" />" rel="stylesheet">
 </head>
 <body>
     <h1>Lista de Tareas</h1>

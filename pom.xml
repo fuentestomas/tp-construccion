@@ -87,4 +87,5 @@
 		</plugins>
 	</build>
 
+	<resources mapping="/resources/**" location="/resources/static/"/>
 </project>
