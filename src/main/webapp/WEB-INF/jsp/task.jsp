@@ -23,7 +23,6 @@
         </div>
         <menu style="grid-row: 3;">
             <a class="button secondary" href="/all">Volver</a>
-            <button class="button" type="submit" form="edit">Guardar</button>
         </menu>
     </section>
 </body>
