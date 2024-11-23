@@ -30,16 +30,18 @@
                         <td>${task.title}</td>
                         <td>${task.description}</td>
                         <td class="status">
-                            <c:choose>
-                                <c:when test="${task.completed}">
-                                    Hecha
-                                    <a class="button todo" href="/toggle/${task.id}">✖</a>
-                                </c:when>
-                                <c:otherwise>
-                                    Por hacer
-                                    <a class="button done" href="/toggle/${task.id}">✔</a>
-                                </c:otherwise>
-                            </c:choose>
+                            <span>
+                                <c:choose>
+                                    <c:when test="${task.completed}">
+                                        Hecha
+                                        <a class="button todo" href="/toggle/${task.id}">✖</a>
+                                    </c:when>
+                                    <c:otherwise>
+                                        Por hacer
+                                        <a class="button done" href="/toggle/${task.id}">✔</a>
+                                    </c:otherwise>
+                                </c:choose>
+                            </span>
                         </td>
                         <td class="actions">
                             <a class="button" href="/edit/${task.id}">Editar</a>
