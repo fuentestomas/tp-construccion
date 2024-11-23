@@ -18,10 +18,19 @@
             <p>${task.title}</p>
         </div>
         <div style="grid-row: 2;">
+            <p><strong>Estado</strong></p>
+            <span>
+                <c:choose>
+                    <c:when test="${task.completed}">Hecha</c:when>
+                    <c:otherwise>Por hacer</c:otherwise>
+                </c:choose>
+            </span>
+        </div>
+        <div style="grid-row: 3;">
             <p><strong>Descripción</strong></p>
             <p>${task.description}</p>
         </div>
-        <menu style="grid-row: 3;">
+        <menu style="grid-row: 4;">
             <a class="button secondary" href="/all">Volver</a>
         </menu>
     </section>
