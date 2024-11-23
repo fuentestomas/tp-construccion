@@ -4,23 +4,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Editar Tarea</title>
+    <title>Editar tarea</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="<c:url value="/resources/static/style.css" />" rel="stylesheet">
 </head>
 <body>
-    <h1>Editar Tarea</h1>
+    <h1>Editar tarea</h1>
     <form:form method="put" modelAttribute="task">
         <form:hidden path="id"/>
         <div>
-            <label for="title">Titulo:</label>
+            <label for="title">Título:</label>
             <form:input path="title" id="title"/>
         </div>
         <div>
-            <label for="description">Descripcion:</label>
+            <label for="description">Descripción:</label>
             <form:textarea path="description" id="description"/>
         </div>
-        <button type="submit">Guardar Cambios</button>
+        <button type="submit">Guardar</button>
     </form:form>
 </body>
 </html>

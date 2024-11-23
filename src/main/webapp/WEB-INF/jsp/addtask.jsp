@@ -4,22 +4,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Agregar Tarea</title>
+    <title>Crear tarea</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="<c:url value="/resources/static/style.css" />" rel="stylesheet">
 </head>
 <body>
-    <h1>Agregar Tarea</h1>
+    <h1>Crear tarea</h1>
     <form:form method="post" modelAttribute="task">
         <div>
-            <label for="title">Titulo:</label>
+            <label for="title">Título:</label>
             <form:input path="title" id="title"/>
         </div>
         <div>
-            <label for="description">Descripcion:</label>
+            <label for="description">Descripción:</label>
             <form:textarea path="description" id="description"/>
         </div>
-        <button type="submit">Agregar</button>
+        <button type="submit">Crear</button>
     </form:form>
 </body>
 </html>
