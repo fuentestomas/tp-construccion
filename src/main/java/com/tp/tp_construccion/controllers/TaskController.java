@@ -27,6 +27,12 @@ public class TaskController {
         return "tasklist"; 
     }
 
+    @GetMapping("/task/{id}")
+    public String getTask(@PathVariable Long id, Model model) {
+        model.addAttribute("task", taskRepository.findById(id).orElse(null));
+        return "task";
+    }
+
     @GetMapping("/add")
     public String addTaskForm(Model model) {
         model.addAttribute("task", new Task());

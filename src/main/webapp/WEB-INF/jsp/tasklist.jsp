@@ -26,7 +26,7 @@
             </thead>
             <tbody>
                 <c:forEach items="${tasks}" var="task">
-                    <tr>
+                    <tr onclick="window.location='/task/${task.id}'">
                         <td>${task.title}</td>
                         <td>${task.description}</td>
                         <td class="status">

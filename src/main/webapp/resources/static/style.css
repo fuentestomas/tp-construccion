@@ -42,6 +42,10 @@ section table {
 			text-overflow: ellipsis;
 			vertical-align: middle;
 		}
+
+		td {
+			cursor: pointer;
+		}
 	}
 
 	tr:nth-child(even) {
@@ -78,6 +82,15 @@ section form {
 	textarea {
 		resize: vertical;
 		height: 100px;
+	}
+}
+
+section.view {
+	display: grid;
+	grid-column: 2;
+
+	div p {
+		white-space: pre-wrap;
 	}
 }
 
