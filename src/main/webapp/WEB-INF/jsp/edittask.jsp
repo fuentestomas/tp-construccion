@@ -17,11 +17,11 @@
             <form:hidden path="id"/>
             <div>
                 <label for="title">Título</label>
-                <form:input path="title" id="title"/>
+                <form:input path="title" id="title" required="required"/>
             </div>
             <div>
                 <label for="description">Descripción</label>
-                <form:textarea path="description" id="description"/>
+                <form:textarea path="description" id="description" required="required"/>
             </div>
             <menu>
                 <a class="button secondary" href="/all">Volver</a>
