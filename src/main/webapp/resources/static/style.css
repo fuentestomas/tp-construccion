@@ -1,3 +1,127 @@
 body {
 	font-family: 'Trebuchet MS', Tahoma, sans-serif;
+	font-variant-emoji: text;
+}
+
+menu {
+	padding: 0px;
+}
+
+header,
+menu,
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+
+	td.status {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+section table {
+	border-collapse: collapse;
+	width: 75%;
+
+	tr {
+		border-bottom: 1px solid #ddd;
+
+		th {
+			background-color: #a1a8a84d;
+		}
+
+		th,
+		td {
+			text-align: left;
+			padding: 4px;
+			max-width: 200px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+
+	tr:nth-child(even) {
+		background-color: #cfd2df48;
+	}
+
+	tr:hover {
+		background-color: #b5bdbd4d;
+	}
+}
+
+section form {
+	width: 50%;
+
+	div {
+		margin-bottom: 15px;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 5px;
+		font-weight: bold;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+		padding: 8px;
+		box-sizing: border-box;
+		border: 1px solid #ccc;
+		border-radius: 2px;
+	}
+
+	textarea {
+		resize: vertical;
+		height: 100px;
+	}
+}
+
+
+.button {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: solid 1px #20538D;
+	/*
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+	*/
+	background: #5888c2e3;
+	color: #FFF;
+	padding: 2px 4px;
+	text-decoration: none;
+	font: inherit;
+	font-size: inherit;
+	cursor: pointer;
+}
+
+.button.create {
+	background: #298eb6d7;
+	border: solid 1px #247c8c;
+}
+
+.button.done {
+	background: #2ac94cd7;
+	border: solid 1px #248c3b;
+}
+
+.button.todo {
+	background: #db7539dc;
+	border: solid 1px #ae5d2e;
+}
+
+.button.delete {
+	background: #d83e33dc;
+	border: solid 1px #802323;
+}
+
+.button.secondary {
+	background: #868686dc;
+	border: solid 1px #636363;
 }

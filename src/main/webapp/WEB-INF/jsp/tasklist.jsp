@@ -8,41 +8,47 @@
     <link href="<c:url value="/resources/static/style.css" />" rel="stylesheet">
 </head>
 <body>
-    <h1>Mis tareas</h1>
-    <a href="/add">Crear tarea</a>
-    <table>
-        <thead>
-            <tr>
-                <th>Título</th>
-                <th>Descripción</th>
-                <th>Estado</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            <c:forEach items="${tasks}" var="task">
+    <header>
+        <h1>Mis tareas</h1>
+    </header>
+    <menu>
+        <a class="button create" href="/add">Crear tarea</a>
+    </menu>
+    <section id="tasks">
+        <table>
+            <thead>
                 <tr>
-                    <td>${task.title}</td>
-                    <td>${task.description}</td>
-                    <td>
-                        <c:choose>
-                            <c:when test="${task.completed}">
-                                Hecha
-                                <a class="button todo" href="/toggle/${task.id}">✖</a>
-                            </c:when>
-                            <c:otherwise>
-                                Por hacer
-                                <a class="button done" href="/toggle/${task.id}">✔</a>
-                            </c:otherwise>
-                        </c:choose>
-                    </td>
-                    <td>
-                        <a href="/edit/${task.id}">Editar</a>
-                        <a href="/delete/${task.id}">Borrar</a>
-                    </td>
+                    <th>Título</th>
+                    <th>Descripción</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
                 </tr>
-            </c:forEach>
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                <c:forEach items="${tasks}" var="task">
+                    <tr>
+                        <td>${task.title}</td>
+                        <td>${task.description}</td>
+                        <td class="status">
+                            <c:choose>
+                                <c:when test="${task.completed}">
+                                    Hecha
+                                    <a class="button todo" href="/toggle/${task.id}">✖</a>
+                                </c:when>
+                                <c:otherwise>
+                                    Por hacer
+                                    <a class="button done" href="/toggle/${task.id}">✔</a>
+                                </c:otherwise>
+                            </c:choose>
+                        </td>
+                        <td class="actions">
+                            <a class="button" href="/edit/${task.id}">Editar</a>
+                            <a class="button delete" href="/delete/${task.id}">Borrar</a>
+                        </td>
+                    </tr>
+                </c:forEach>
+            </tbody>
+        </table>
+    </section>
 </body>
 </html>

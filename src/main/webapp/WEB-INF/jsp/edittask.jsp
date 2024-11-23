@@ -9,18 +9,25 @@
     <link href="<c:url value="/resources/static/style.css" />" rel="stylesheet">
 </head>
 <body>
-    <h1>Editar tarea</h1>
-    <form:form method="put" modelAttribute="task">
-        <form:hidden path="id"/>
-        <div>
-            <label for="title">Título:</label>
-            <form:input path="title" id="title"/>
-        </div>
-        <div>
-            <label for="description">Descripción:</label>
-            <form:textarea path="description" id="description"/>
-        </div>
-        <button type="submit">Guardar</button>
-    </form:form>
+    <header>
+        <h1>Editar tarea</h1>
+    </header>
+    <section>
+        <form:form method="put" modelAttribute="task" id="edit">
+            <form:hidden path="id"/>
+            <div>
+                <label for="title">Título</label>
+                <form:input path="title" id="title"/>
+            </div>
+            <div>
+                <label for="description">Descripción</label>
+                <form:textarea path="description" id="description"/>
+            </div>
+            <menu>
+                <a class="button secondary" href="/all">Volver</a>
+                <button class="button" type="submit" form="edit">Guardar</button>
+            </menu>
+        </form:form>
+    </section>
 </body>
 </html>
