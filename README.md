@@ -1,4 +1,3 @@
-# tp-construccion
 # Dependencias
 * Java 21
 * Maven
