@@ -9,7 +9,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-
 @Controller
 public class TaskController {
 
@@ -24,7 +23,7 @@ public class TaskController {
     @GetMapping("/all")
     public String taskList(Model model) {
         model.addAttribute("tasks", taskRepository.findAll());
-        return "tasklist"; 
+        return "tasklist";
     }
 
     @GetMapping("/task/{id}")
@@ -36,7 +35,7 @@ public class TaskController {
     @GetMapping("/add")
     public String addTaskForm(Model model) {
         model.addAttribute("task", new Task());
-        return "addtask"; 
+        return "addtask";
     }
 
     @PostMapping("/add")
@@ -48,7 +47,7 @@ public class TaskController {
     @GetMapping("/edit/{id}")
     public String editTaskForm(@PathVariable Long id, Model model) {
         model.addAttribute("task", taskRepository.findById(id).orElse(null));
-        return "edittask"; 
+        return "edittask";
     }
 
     @PostMapping("/edit/{id}")
