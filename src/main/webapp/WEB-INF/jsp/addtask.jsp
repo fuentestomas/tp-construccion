@@ -5,6 +5,7 @@
 <html>
 <head>
     <title>Agregar Tarea</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="<c:url value="/resources/static/style.css" />" rel="stylesheet">
 </head>
 <body>
