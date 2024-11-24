@@ -85,7 +85,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<resources mapping="/resources/**" location="/resources/static/"/>
 	</build>
 
-	<resources mapping="/resources/**" location="/resources/static/"/>
 </project>
