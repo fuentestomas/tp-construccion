@@ -15,7 +15,7 @@
     <section class="view">
         <div style="grid-row: 1;">
             <p><strong>Título</strong></p>
-            <p>${task.title}</p>
+            <p style="margin: 0;">${task.title}</p>
         </div>
         <div style="grid-row: 2;">
             <p><strong>Estado</strong></p>
@@ -28,7 +28,7 @@
         </div>
         <div style="grid-row: 3;">
             <p><strong>Descripción</strong></p>
-            <p>${task.description}</p>
+            <p style="margin: 0;">${task.description}</p>
         </div>
         <menu style="grid-row: 4;">
             <a class="button secondary" href="/all">Volver</a>
