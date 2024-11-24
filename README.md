@@ -53,6 +53,6 @@ Al iniciar la aplicación en http://localhost:8080, se mostrará una lista de la
 
 ![Cambio de estado de una tarea](./screenshots/Cambio%20de%20estado.png)
 
-## Video demostrativo - (hacer click en imagen)
-[![Video de ejemplo](./screenshots/Listado%20vacio.png)](https://drive.google.com/file/d/18Hza64L3OMJ3SvWYqyZMExtlC7ONfwFM/view?usp=sharing)
+## Video demostrativo
+https://github.com/user-attachments/assets/7266dded-11d0-40ac-8ebe-d27e351257bf
 
